@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Cloutech Academy</div>
+        <div class="content">
+            <form action="validate.php" id="myForm" method="POST">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Phone</span>
+                        <input type="number" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <input type="address" placeholder="Enter your address" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Course</span>
+                        <select name="Course">
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JAVASCRIOT">JAVASCRIPT</option>
+                            <option value="PYTHON">PYTHON</option>
+                            <option value="PHP">PHP</option>
+                            <option value="REACT">REACT</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">level</span>
+                        <select name="Course">
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Proficient">Proficient</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+                    <span class="gender-title">
+                        Gender
+                    </span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                   <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
